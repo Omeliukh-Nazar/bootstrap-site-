@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="assets/Css/main.css">
+	<title>Funny Company</title>
+</head>
+<body>
+	<script src="assets/js/Scripts.js"></script>
+		<header id="HEADER">
+				<nav class="navbar navbar-expand-lg navbar-light ">
+					<div class="container">
+					<a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a>
+					    <div class="navbar-nav justify-content-end">
+						     <a class="nav-link cursor" onclick="scrollToFootwear()" >OUR FOOTWEAR</a>
+						     <a class="nav-link cursor" onclick="scrollToShowcase()">SHOWCASE</a>
+						     <a class="nav-link cursor" onclick="scrollToContact()" >CONTACT US</a>
+					    </div>	
+					</div>	
+				</nav>
+		</header>
+		<div class="header_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<h1 >Hello!!!<br>We Are Sold<br>FOOTWEAR.</h1>
+						<h3>Shoes that fit you.</h3>
+						<button class="btn btn-warning btn_buy" onclick="scrollToContact()">BUY SHOES</button>
+					</div>
+					<div class="col-6">
+						<img class="header_photo" src="assets/images/vsi.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="choice_block">
+			<div class="container">
+				<div class="row title">
+					<h1 id="CHOICE">CHOICE OUR SHOESE!</h1>
+				</div>
+				<div class="row align-items-center">
+					<div class="col-2 " onclick="plusSlides(-1)">
+						<img class="Arrow" src="assets/images/arrow2.png">
+					</div>
+					<div class="col-8 videoBox">
+							<video class="mySlides" autoplay muted playsinline loop>
+							  <source src="assets/slideshow/video1.mp4" type="video/mp4">
+							  Your browser does not support the video tag.
+							</video>.
+							<video class="mySlides" autoplay muted playsinline loop>
+							  <source src="assets/slideshow/video2.mp4" type="video/mp4">
+							  Your browser does not support the video tag.
+							</video>
+							<video class="mySlides" autoplay muted playsinline loop>
+							  <source src="assets/slideshow/video3.mp4" type="video/mp4">
+							  Your browser does not support the video tag.
+							</video>
+							<video class="mySlides" autoplay muted playsinline loop>
+							  <source src="assets/slideshow/video4.mp4" type="video/mp4">
+							  Your browser does not support the video tag.
+							</video>
+					</div>
+					<div class="col-2 " onclick="plusSlides(1)">
+						<img class="Arrow" src="assets/images/arrow.png">
+					</div>		
+				</div>
+				<div class="row justify-content-center dots">
+					  <span class="dot" onclick="currentSlide(1)"></span>
+					  <span class="dot" onclick="currentSlide(2)"></span>
+					  <span class="dot" onclick="currentSlide(3)"></span>
+					  <span class="dot" onclick="currentSlide(4)"></span>
+				</div>
+				<script>
+					var slideIndex = 1;
+					showDivs(slideIndex);
+
+					function plusDivs(n) {
+					  showDivs(slideIndex += n);
+					}
+
+					function showDivs(n) {
+					  var i;
+					  var x = document.getElementsByClassName("mySlides");
+					  if (n > x.length) {slideIndex = 1}
+					  if (n < 1) {slideIndex = x.length} ;
+					  for (i = 0; i < x.length; i++) {
+					    x[i].style.display = "none";
+					  }
+					  x[slideIndex-1].style.display = "block";
+					}
+				</script>
+			</div>
+		</div>
+		<div class="showcase_block mrg_bottom">
+			<div class="container">
+				<div class="row">
+					<h1 class="mrg_bottom" id="SHOWCASE">FOOTWEAR SHOWCASE</h1>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<div class="row showcase_photo">
+							<img src="assets/images/nazar.jpg">
+							<div class="hover_fill">
+								<div class="hover_text">
+									<h1>Shoes</h1>
+									<p>300$</p>
+								</div>
+							</div>
+						</div>
+						<div class="row showcase_photo">
+							<img src="assets/images/garm.jpg">
+							<div class="hover_fill">
+								<div class="hover_text">
+									<h1>Shoes</h1>
+									<p>300$</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="row showcase_photo">
+							<img src="assets/images/ilia.jpg">
+							<div class="hover_fill">
+								<div class="hover_text">
+									<h1>Shoes</h1>
+									<p>300$</p>
+								</div>
+							</div>
+						</div>
+						<div class="row showcase_photo">
+							<img src="assets/images/staruy.jpg">
+							<div class="hover_fill">
+								<div class="hover_text">
+									<h1>Shoes</h1>
+									<p>300$</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="row showcase_photo">
+							<img src="assets/images/vlad.jpg">
+							<div class="hover_fill">
+								<div class="hover_text">
+									<h1>Shoes</h1>
+									<p>300$</p>
+								</div>
+							</div>
+						</div>
+						<div class="row showcase_photo">
+							<img src="assets/images/nimets.jpg">
+							<div class="hover_fill">
+								<div class="hover_text">
+									<h1>Shoes</h1>
+									<p>300$</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contact_block mrg_bottom">
+			<div class="container">
+				<form>
+					<div class="contact_title">
+						<h1 id="CONTACT">CONTACT US</h1>
+						<h3>We will send you special offer if you buy two pairs of shoes!</h3>
+					</div>
+					  <div class="row align-items-center">
+					  	<div class="col-4 d-grid">
+					  		<h2 class="bold">Send Us Message</h2>
+					  		<input type="text" class="form-control input" id="fname" name="firstname" placeholder="Name" required pattern="[A-Za-z]{2,20}">
+				    		<input type="text" id="email"  class="form-control input" name="email" placeholder="Email" required pattern="[A-Za-z0-9_.]+[@][a-z]{1,6}[.][a-z]{1,3}">
+					  		 <textarea name="message" class="form-control input" rows="10" cols="30"  placeholder="Message" required></textarea>
+					  		 <button class="btn btn-warning send_btn">Send Message</button>
+					  	</div>
+					  	<div class="col-8">
+					  		<img src="assets/images/photo.jpg">
+					  	</div>
+					  </div>
+				</form>
+			</div>
+		</div>
+		<div class="info_block container">
+			<div class="row justify-content-center mrg_bottom">
+				<div class="col-2 info_div">
+					<img src="assets/images/Flag.png">
+					<p>12 Bandera street, <br>Lviv, Ukraine, 79013</p>
+				</div>
+				<div class="col-2 info_div">
+					<img src="assets/images/phone.png">
+					<p>+067-280-0555<br>+067-783-3433</p>
+				</div>
+				<div class="col-2 info_div">
+					<img src="assets/images/email.png">
+					<p>nazar.b.kozak@lpnu.ua</p>
+				</div>
+			</div>
+			<div class="soc_container mrg_bottom">
+				<div class="row justify-content-center ">
+					<div class="col-1 info_div align-items-center">
+						<a id="logoFaceboke" href="https://www.facebook.com/olga.rybytska">
+						<img src="assets/images/Facebook.png"></a>
+					</div>
+					<div class="col-1 info_div align-items-center">
+						<a id="logoTwitter" href="https://twitter.com/elonmusk">
+						<img src="assets/images/Twitter.png">
+					</a>
+					</div>
+					<div class="col-1 info_div align-items-center">
+						<a id="Bool" href="https://vk.com/kri.stinka?z=photo32607501_456239169%2Fwall32607501_2491">
+						<img src="assets/images/Bool.png">
+					</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-1">
+						<img src="assets/images/LogoFooter.png">
+					</div>
+					<div class="col-9">
+						<p class="footer_text">© 2020 - Funny Company,All Right Reserved</p>
+					</div>
+					<div class="col-2">
+						<div class="footer_back">
+							<a onclick="scrollBack()">BACK TO TOP </a>
+							<i onclick="scrollBack()" class="arrow up"></i>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</footer>
+</body>
+</html>
